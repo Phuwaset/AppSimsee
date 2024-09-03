@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ตรวจระดับความดัน   -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูล</title>
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">
+    <!-- Add Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* background: 
+        linear-gradient(#e96107, transparent),
+        linear-gradient(to top left, rgba(241, 171, 121, 255), transparent),
+        linear-gradient(to top right, rgba(214, 85, 77, 255), transparent); */
+            background-image: linear-gradient(to right, rgba(196, 196, 196, 0.871), rgba(255, 255, 255, 0.84));
+        }
+    </style>
+    <!-- css -->
+    <style type="text/css">
+        /*modal css*/
+
+
+        /* fade ออกมาตรงกลางหน้าจอ
+    .fade {
+        opacity: 0;
+        -webkit-transition: opacity 1s linear;
+        transition: opacity 1s linear;
+    }
+    */
+
+        /* fade left ออกมาจากทางซ้ายของหน้าจอ */
+        .modal.fade:not(.in) .modal-dialog {
+            -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+        }
+
+        @media screen and ((min-width: 500px)) {
+            .imgs {
+                width: 35%;
+                height: 35%;
+                text-align: center;
+                justify-content: center;
+                justify-items: center;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a href="index.html"><img class="logo_nav" src="./image/siamsee.gif" width="30px" height="30px"></a>
+            <a class="navbar-brand" style="font-size: 15px;margin-left: 10px;">เซียมซี 7 สี ทำนายโรค</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">หน้าหลัก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="https://www.medparkhospital.com/disease-and-treatment/high-blood-pressure-hypertension">โรคความดันโลหิต</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="https://www.dmthai.org/new/index.php/sara-khwam-ru/sahrab-bukhkhl-thawpi/health-information-and-articles/health-information-and-articles-2561/2018-diabates-31">โรคเบาหวาน</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            เกี่ยวกับเรา
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="member.html">ประวัติผู้จัดทำ</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://www.sanook.com/horoscope/229409/">เกร็ดความรู้เกี่ยวกับเซียมซี</a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="http://www.bcnlp.ac.th/main/admission56.php">วิทยาลัยพยาบาล</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav><br>
+    <div class="container">
+        <center>
+            <br><br><br><br><a href="semseeHg.html">
+
+                <div class="text-center">
+                    <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+    </div>
+    </center>
+    <!-- modal -->
+    <!-- modal -->
+    <div id="myModal" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><a
+                            href="semseeHg.html"></a></button>
+                </div>
+                <div class="modal-body" required>
+                    <iframe
+                        src="https://script.google.com/macros/s/AKfycbyaYMnqV6NMzqPxOKwvlIaT4aw9pp9l52RilUczlVx4nq4SlIm8XJLfyoC6_tUiI5cGdg/exec"
+                        frameborder="0" width="100%" height="500px" scrolling="yes" style="border: none;">
+
+                    </iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><a href="semseeHg.html"
+                            style="color: white;">อีกครั้ง</a></button>
+                    <button type="button" class="btn btn-primary"><a href="selectForm.html"
+                            style="color: white;">กลับเข้าสู่หน้าหลัก</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add Bootstrap JS and Popper.js scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="https://sheetdb.io/handlebars.js"></script>
+
+
+
+    <script>
+        Swal.fire({
+            title: "Good job!",
+            text: "You clicked the button!",
+            icon: "success"
+        });
+        // Delayed Modal
+        setTimeout(function () {
+            // Show Bootstrap Modal
+            var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+            myModal.show();
+        }, 500); // 3000 milliseconds (3 seconds)
+    </script>
+
+    <script type="text/javascript">
+        /*
+            //onload show modal script ชุดนี้โหลดมาตรงๆ ไม่มีหน่วงเวลานะ
+            $(document).ready(function(){
+                $("#myModal").modal('show');
+            });
+            */
+
+        //เรีกยก modal ออกมาแสดง	
+        var show = function () {
+            $('#myModal').modal('show');
+        };
+
+        /* กำหนดเวลาหลังเปิดหน้าเว็บ ว่าจะให้แสดงหลังโหลดหน้าเว็บแล้วกี่วินาที  เช่น 2000 = 2 วิ */
+        $(window).load(function () {
+            var timer = window.setTimeout(show, 500);
+        });
+
+    </script>
+
+</body>
+
+</html>
